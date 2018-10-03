@@ -9,20 +9,14 @@ public class Decorator {
         
         
         System.out.println("Novo heroi: "+m.getNome());
+        System.out.println("Ele pode :");
         m = new Magia(m);
         m = new Voar(m);
-        System.out.println("Ele pode :");
-        m.showHabilidades();
-        System.out.println("E tem de forca ");
-        m.showForca();
         
         System.out.println("Novo heroi: "+g.getNome());
+        System.out.println("Ele pode :");
         g = new Escudo(g);
         g = new Correr(g);
-        System.out.println("Ele pode :");
-        g.showHabilidades();
-        System.out.println("E tem de forca ");
-        g.showForca();
     }
     
 }
